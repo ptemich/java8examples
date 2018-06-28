@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * @author Brutusek
- *
- */
-package renamer;
