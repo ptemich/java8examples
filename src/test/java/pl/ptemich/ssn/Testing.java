@@ -1,4 +1,4 @@
-package pl.ptemich.j8tutorials.ssn.tests;
+package pl.ptemich.ssn;
 
 import static org.junit.Assert.*;
 

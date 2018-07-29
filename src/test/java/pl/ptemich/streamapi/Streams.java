@@ -1,7 +1,6 @@
-package pl.ptemich.j8tutorials.streamapi;
+package pl.ptemich.streamapi;
 
 import java.util.Arrays;
-import java.util.Iterator;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
