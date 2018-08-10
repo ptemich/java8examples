@@ -1,4 +1,4 @@
-package pl.ptemich.j8tutorials.pagechecker;
+package pl.ptemich.pagechecker;
 
 public class PageChecker {
 

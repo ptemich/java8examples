@@ -1,4 +1,4 @@
-package pl.ptemich.j8tutorials.ssn.model.letters;
+package pl.ptemich.ssn.model.letters;
 
 public class A extends AbstractCharacter {
 

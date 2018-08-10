@@ -1,11 +1,8 @@
-/**
- * 
- */
 package pl.ptemich.movieindexer.service;
 
-import java.util.List;
+import java.io.File;
 
-import pl.ptemich.movieindexer.model.Movie;
+import pl.ptemich.movieindexer.model.ParsingResult;
 
 /**
  * @author Przemek
@@ -13,13 +10,34 @@ import pl.ptemich.movieindexer.model.Movie;
  */
 public class DirectoryStructureReaderImpl implements DirectoryStructureReader {
 
-  /* (non-Javadoc)
-   * @see pl.ptemich.movieindexer.service.DirectoryStructureReader#readMoviesFromPath()
-   */
   @Override
-  public List<Movie> readMoviesFromPath() {
-    // TODO Auto-generated method stub
-    return null;
+  public void readMoviesFromPath(ParsingResult result, File folder) {
+    if (reachedParsinLimit(result)) {
+      return;
+    }
+    
+    System.out.println("Read from folder: " + folder.getPath());
+    if (folder.exists() && folder.isDirectory()) {
+      File[] files = folder.listFiles();
+      if (files != null) {
+        for (File file : files) {
+          checkFile(result, file);
+        }
+      }
+    }
   }
+
+  private boolean reachedParsinLimit(ParsingResult result) {
+    return result.size() > 10;
+  }
+
+  private void checkFile(ParsingResult result, File file) {
+    if (file.isDirectory()) {
+      readMoviesFromPath(result, file);
+    } else if (file.isFile()) {
+      result.rgisterMovieLocation(file.getName(), file.getPath());
+    }
+  }
+  
 
 }

@@ -3,9 +3,9 @@
  */
 package pl.ptemich.movieindexer.service;
 
-import java.util.List;
+import java.io.File;
 
-import pl.ptemich.movieindexer.model.Movie;
+import pl.ptemich.movieindexer.model.ParsingResult;
 
 /**
  * @author Przemek
@@ -13,6 +13,6 @@ import pl.ptemich.movieindexer.model.Movie;
  */
 public interface DirectoryStructureReader {
 
-  List<Movie> readMoviesFromPath();
+  void readMoviesFromPath(ParsingResult result, File folder);
   
 }

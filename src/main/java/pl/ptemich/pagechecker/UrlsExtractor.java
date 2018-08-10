@@ -1,4 +1,4 @@
-package pl.ptemich.j8tutorials.pagechecker;
+package pl.ptemich.pagechecker;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;

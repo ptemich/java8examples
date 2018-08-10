@@ -1,4 +1,4 @@
-package pl.ptemich.j8tutorials.ssn.model;
+package pl.ptemich.ssn.model;
 
 public class Neuron {
 

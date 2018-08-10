@@ -4,9 +4,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import pl.ptemich.j8tutorials.ssn.model.ActivationFunction;
-import pl.ptemich.j8tutorials.ssn.model.Neuron;
-import pl.ptemich.j8tutorials.ssn.model.NeuronInput;
+import pl.ptemich.ssn.model.ActivationFunction;
+import pl.ptemich.ssn.model.Neuron;
+import pl.ptemich.ssn.model.NeuronInput;
 
 public class Testing {
 
