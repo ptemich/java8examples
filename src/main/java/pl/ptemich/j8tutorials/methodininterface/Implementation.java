@@ -15,7 +15,7 @@ public class Implementation implements InterfaceA, InterfaceB {
    */
   @Override
   public String printMe() {
-    // TODO Auto-generated method stub
+    // to nie zadziala -> super.printMe();
     return InterfaceA.super.printMe();
   }
   

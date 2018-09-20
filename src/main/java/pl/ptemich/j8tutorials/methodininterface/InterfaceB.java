@@ -10,7 +10,7 @@ package pl.ptemich.j8tutorials.methodininterface;
 public interface InterfaceB {
 
   default String printMe() {
-    return "DEF InterfaceB";
+    return "InterfaceB version of printMe";
   }
   
 }

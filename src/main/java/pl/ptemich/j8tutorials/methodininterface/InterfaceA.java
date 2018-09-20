@@ -10,11 +10,11 @@ package pl.ptemich.j8tutorials.methodininterface;
 public interface InterfaceA {
 
   default String printMe() {
-    return "DEF InterfaceA";
+    return "InterfaceA version of printMe";
   }
   
-  default String printMeA() {
-    return "print me A";
+  static String staticPrintMe() {
+    return "Static printing method";
   }
   
 }
